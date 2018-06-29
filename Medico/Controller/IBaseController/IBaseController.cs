@@ -10,7 +10,7 @@ namespace Controller.IBaseController
 
         IList<T> ListarPorNome(string nome);
 
-        T ListarPorCRM(int chave);
+        IList<T> ListarPorCRM(string chave);
 
         IList<T> ListarPorEspecialidade(string especialidade);
 

@@ -26,12 +26,17 @@ namespace Controller
 
         public IList<Medico> ListarPorNome(string nome)
         {
-            return contexto.Medicos.Where(med => med.nome.ToLower() == nome.ToLower()).ToList();
+            return contexto.Medicos.Where(med => med.nome == nome).ToList();
         }
 
-        public Medico ListarPorCRM(int chave)
+        public Medico BuscarPorCRM(string chave)
         {
             return contexto.Medicos.Find(chave);
+        }
+
+        public IList<Medico> ListarPorCRM (string chave)
+        {
+            return contexto.Medicos.Where(crmMedico => crmMedico.crm == chave).ToList();
         }
 
         public void Atualizar(Medico entity)
@@ -42,7 +47,7 @@ namespace Controller
 
         public void Excluir(int chave)
         {
-            Medico m = ListarPorCRM(chave);
+            Medico m = BuscarPorCRM(chave.ToString());
 
             if (m != null)
             {
@@ -53,7 +58,8 @@ namespace Controller
 
         public IList<Medico> ListarPorEspecialidade(string especialidade)
         {
-            return contexto.Medicos.Where(esp => esp.especialidade.ToLower() == especialidade.ToLower()).ToList();
+            return contexto.Medicos.Where(esp => esp.especialidade == especialidade).ToList();
         }
+
     }
 }

@@ -5,7 +5,7 @@ namespace Model
     public class Medico
     {
         [Key]
-        public int crm { get; set; }
+        public string crm { get; set; }
 
         [Required, StringLength(50)]
         public string nome { get; set; }

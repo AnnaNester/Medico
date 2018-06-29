@@ -1,0 +1,17 @@
+﻿<Window x:Class="MedicoView.ListarEspecialidade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicoView"
+        mc:Ignorable="d"
+        Title="ListarEspecialidade" Height="400" Width="600">
+    <Grid>
+        <Label x:Name="Especialidade" Content="Listar Por Especialidade" HorizontalAlignment="Left" Margin="216,21,0,0" VerticalAlignment="Top" Width="188" Height="32" FontFamily="Segoe Script" FontSize="20"/>
+        <Label x:Name="Especialidade_Medico" Content="Especialidade: " HorizontalAlignment="Left" Margin="40,51,0,0" VerticalAlignment="Top" FontFamily="Segoe Script"/>
+        <TextBox x:Name="txtEspecialidade" HorizontalAlignment="Left" Height="23" Margin="40,77,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnEspecialidade" Content="Buscar Especialidade" HorizontalAlignment="Left" Margin="242,77,0,0" VerticalAlignment="Top" Width="121" Click="btnEspecialidade_Click"/>
+        <DataGrid x:Name="dgMedicosEspecialidade" HorizontalAlignment="Left" Margin="40,129,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

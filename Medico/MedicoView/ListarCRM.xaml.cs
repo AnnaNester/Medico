@@ -31,5 +31,10 @@ namespace MedicoView
             string crm = txtCRM.Text;
             dgMedicosCRM.ItemsSource = medicoController.ListarPorCRM(crm);
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

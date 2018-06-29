@@ -32,5 +32,10 @@ namespace MedicoView
             dgMedicosNome.ItemsSource = medicoController.ListarPorNome(nome);
 
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

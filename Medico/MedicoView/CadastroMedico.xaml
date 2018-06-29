@@ -1,0 +1,23 @@
+﻿<Window x:Class="MedicoView.CadastroMedico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicoView"
+        mc:Ignorable="d"
+        Title="CadastroMedico" Height="400" Width="600">
+    <Grid>
+        <Label x:Name="Cadastro" Content="Cadastro" HorizontalAlignment="Left" Margin="229,25,0,0" VerticalAlignment="Top" Width="116" Height="34" FontFamily="Segoe Script" FontSize="20"/>
+        <TextBox x:Name="txtCRM" HorizontalAlignment="Left" Height="23" Margin="42,94,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="42,182,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="398,94,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEspecialidade" HorizontalAlignment="Left" Height="23" Margin="398,182,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCadastro" Content="Salvar" HorizontalAlignment="Left" Margin="187,254,0,0" VerticalAlignment="Top" Width="81" Height="25" Click="btnCadastro_Click"/>
+        <Label x:Name="CRM" Content="CRM: " HorizontalAlignment="Left" Margin="42,68,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Label x:Name="Nome" Content="Nome: " HorizontalAlignment="Left" Margin="42,156,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Label x:Name="Endereco" Content="Endereço: " HorizontalAlignment="Left" Margin="398,68,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Label x:Name="Especialidade" Content="Especialidade: " HorizontalAlignment="Left" Margin="398,156,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="314,254,0,0" VerticalAlignment="Top" Width="81" Height="25" Click="btnCancelar_Click"/>
+
+    </Grid>
+</Window>

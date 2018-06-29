@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{767C9915-95D8-424E-AAC3-4CA7F83CC7C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicoView", "MedicoView\MedicoView.csproj", "{261ECB28-5DAA-416F-A877-AD682674E176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{767C9915-95D8-424E-AAC3-4CA7F83CC7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{767C9915-95D8-424E-AAC3-4CA7F83CC7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{767C9915-95D8-424E-AAC3-4CA7F83CC7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261ECB28-5DAA-416F-A877-AD682674E176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261ECB28-5DAA-416F-A877-AD682674E176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261ECB28-5DAA-416F-A877-AD682674E176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261ECB28-5DAA-416F-A877-AD682674E176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

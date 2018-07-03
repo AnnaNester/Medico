@@ -7,14 +7,21 @@
         mc:Ignorable="d"
         Title="ListarCRM" Height="400" Width="600">
     <Grid>
-        <Label x:Name="CRM" Content="Listar Por CRM" HorizontalAlignment="Left" Margin="216,21,0,0" VerticalAlignment="Top" Width="177" Height="32" FontFamily="Segoe Script" FontSize="20"/>
         <Label x:Name="CRM_Medico" Content="CRM: " HorizontalAlignment="Left" Margin="40,51,0,0" VerticalAlignment="Top" FontFamily="Segoe Script"/>
         <TextBox x:Name="txtCRM" HorizontalAlignment="Left" Height="23" Margin="40,77,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnCRM" Content="Buscar CRM" HorizontalAlignment="Left" Margin="242,77,0,0" VerticalAlignment="Top" Width="75" Click="btnCRM_Click"/>
-        <DataGrid x:Name="dgMedicosCRM" HorizontalAlignment="Left" Margin="40,129,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="430,260,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
-        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="85,260,0,0" VerticalAlignment="Top" Width="75" Click="btnAlterar_Click"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="256,260,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluir_Click"/>
+        <Button x:Name="btnCRM" Content="Buscar" HorizontalAlignment="Left" Margin="242,77,0,0" VerticalAlignment="Top" Width="75" Click="btnCRM_Click"/>
+        <DataGrid x:Name="dgMedicosCRM" HorizontalAlignment="Left" Margin="40,105,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="443,323,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="93,323,0,0" VerticalAlignment="Top" Width="75" Click="btnAlterar_Click"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="256,323,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluir_Click"/>
+        <Label x:Name="Cadastro" Content="Cadastro" HorizontalAlignment="Left" Margin="229,25,0,0" VerticalAlignment="Top" Width="116" Height="34" FontFamily="Segoe Script" FontSize="20"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="40,206,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="23" Margin="398,206,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEspecialidade" HorizontalAlignment="Left" Height="23" Margin="398,272,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Nome" Content="Nome: " HorizontalAlignment="Left" Margin="40,176,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Label x:Name="Endereco" Content="Endereço: " HorizontalAlignment="Left" Margin="398,175,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Label x:Name="Especialidade" Content="Especialidade: " HorizontalAlignment="Left" Margin="398,236,0,0" VerticalAlignment="Top" FontFamily="Segoe Print"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="93,323,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
 
     </Grid>
 </Window>

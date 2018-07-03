@@ -45,19 +45,19 @@ namespace Controller
             contexto.SaveChanges();
         }
 
-        public int Excluir(int chave)
+        public bool Excluir(string chave)
         {
-            Medico m = BuscarPorCRM(chave.ToString());
+            Medico m = BuscarPorCRM(chave);
 
             if (m != null)
             {
                 contexto.Entry(m).State = System.Data.Entity.EntityState.Deleted;
                 contexto.SaveChanges();
-                return 1;
+                return true;
             }
             else
             {
-                return 0;
+                return false;
             }
         }
 

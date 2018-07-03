@@ -8,11 +8,10 @@
         Title="ListarMedicos" Height="400" Width="600">
     <Grid>
         <Label x:Name="Listar" Content="Buscar Médico" HorizontalAlignment="Left" Margin="199,10,0,0" VerticalAlignment="Top" FontFamily="Segoe Script" FontSize="20"/>
-        <Button x:Name="btnCRM" Content="Buscar CRM" HorizontalAlignment="Left" Margin="226,57,0,0" VerticalAlignment="Top" Width="120" Click="btnCRM_Click" Height="32"/>
-        <Button x:Name="btnNome" Content="Buscar Nome" HorizontalAlignment="Left" Margin="226,113,0,0" VerticalAlignment="Top" Width="120" Click="btnNome_Click" Height="32"/>
-        <Button x:Name="btnEspecialidade" Content="Buscar Especialidade" HorizontalAlignment="Left" Margin="226,167,0,0" VerticalAlignment="Top" Width="120" Click="btnEspecialidade_Click" Height="39"/>
+        <Button x:Name="btnCRM" Content="Buscar CRM" HorizontalAlignment="Left" Margin="226,81,0,0" VerticalAlignment="Top" Width="120" Click="btnCRM_Click" Height="32"/>
+        <Button x:Name="btnNome" Content="Buscar Nome" HorizontalAlignment="Left" Margin="226,154,0,0" VerticalAlignment="Top" Width="120" Click="btnNome_Click" Height="32"/>
+        <Button x:Name="btnEspecialidade" Content="Buscar Especialidade" HorizontalAlignment="Left" Margin="226,221,0,0" VerticalAlignment="Top" Width="120" Click="btnEspecialidade_Click" Height="30"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="430,282,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
-        <Button x:Name="btnTodos" Content="Buscar Todos" HorizontalAlignment="Left" Margin="226,223,0,0" VerticalAlignment="Top" Width="120" Height="32"/>
 
     </Grid>
 </Window>

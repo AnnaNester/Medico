@@ -16,6 +16,6 @@ namespace Controller.IBaseController
 
         void Atualizar(T entity);
 
-        int Excluir(int chave);
+        bool Excluir(string chave);
     }
 }

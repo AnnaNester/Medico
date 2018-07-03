@@ -28,10 +28,16 @@ namespace MedicoView
 
                 MedicoController medicoController = new MedicoController();
 
+                if (medicoController.BuscarPorCRM(med.crm) == null)
+                {
+                    medicoController.Cadastro(med);
 
-               medicoController.Cadastro(med);
-
-               MessageBox.Show("Cadastrado com sucesso");
+                    MessageBox.Show("Cadastrado com sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Médico já cadastrado!");
+                }
 
             }
             catch (Exception ex)

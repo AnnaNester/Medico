@@ -45,7 +45,7 @@ namespace Controller
             contexto.SaveChanges();
         }
 
-        public void Excluir(int chave)
+        public int Excluir(int chave)
         {
             Medico m = BuscarPorCRM(chave.ToString());
 
@@ -53,6 +53,11 @@ namespace Controller
             {
                 contexto.Entry(m).State = System.Data.Entity.EntityState.Deleted;
                 contexto.SaveChanges();
+                return 1;
+            }
+            else
+            {
+                return 0;
             }
         }
 

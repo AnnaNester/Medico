@@ -36,5 +36,18 @@ namespace MedicoView
         {
             this.Close();
         }
+
+        private void btnExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            MedicoController medicoController = new MedicoController();
+            int crm = Convert.ToInt32(txtCRM.Text);
+            medicoController.Excluir(crm);
+            MessageBox.Show("Cadastro Excluído com Sucesso!");
+        }
+
+        private void btnAlterar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

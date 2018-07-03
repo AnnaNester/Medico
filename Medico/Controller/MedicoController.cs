@@ -26,7 +26,7 @@ namespace Controller
 
         public IList<Medico> ListarPorNome(string nome)
         {
-            return contexto.Medicos.Where(med => med.nome == nome).ToList();
+            return contexto.Medicos.Where(med => med.nome.ToLower() == nome.ToLower()).ToList();
         }
 
         public Medico BuscarPorCRM(string chave)
@@ -61,9 +61,9 @@ namespace Controller
             }
         }
 
-        public IList<Medico> ListarPorEspecialidade(string especialidade)
+        public IList<Medico> ListarPorEspecialidade(string esp)
         {
-            return contexto.Medicos.Where(esp => esp.especialidade == especialidade).ToList();
+            return contexto.Medicos.Where(e => e.especialidade.ToUpper() == esp.ToUpper()).ToList();
         }
 
     }

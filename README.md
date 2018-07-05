@@ -6,4 +6,4 @@ Sistema em C# de médicos:
 - permite excluir os dados de um médico informando o CRM
 - o sistema lista os médicos pelo CRM
 - listagem por nome
-- listagem por especialidadd
+- listagem por especialidade
